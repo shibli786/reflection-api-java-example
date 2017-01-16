@@ -17,7 +17,7 @@ Using these stuffs one can violate the singleTon design pattern or the concept o
       now you have  Test class object you can play with it as you use to play with an normal objects
       test.defaultMethod();
      
-#Accessing a Private Field of an class
+#Accessing a Private Field of a class
    
     here a is private field of Test Class
 	Field f=Class.forName("Test").getDeclaredField("a");
@@ -26,7 +26,7 @@ Using these stuffs one can violate the singleTon design pattern or the concept o
 	there may be multiple objects of a Test class so we must pass a reference address of object to Filed object whose 	  field we wants to access.
   	System.out.println(f.get(test));
 
-#Accessing a Private Method  of an class	
+#Accessing a Private Method  of a class	
 	
 	Method m=Class.forName("Test").getDeclaredMethods()[1];
 	m.setAccessible(true);
