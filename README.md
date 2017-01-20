@@ -6,7 +6,7 @@ Reflection Api provides various tools for inspecting any java object.
 Using these stuffs one can violate the singleTon design pattern or the concept of private keyword in java.
 
 
-#Creating an Object of a class which have single construtor of private type
+#Creating an Object of a class which have only private construtors
 
      Constructor con=Class.forName("Test").getDeclaredConstructors()[0];
      con.setAccessible(true);
